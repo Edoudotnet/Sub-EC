@@ -3,16 +3,16 @@
 ![rand](https://rand-xyz.now.sh/api/hello)
 
 ```
-https://raw.githubusercontent.com/darknessm427/Sub/main/V2ss
+https://raw.githubusercontent.com/Edoudotnet/Sub/main/V2ss
 ```
 ![rand](https://rand-xyz.now.sh/api/hello)
 
 ```
-https://raw.githubusercontent.com/darknessm427/Sub/main/V2mix
+https://raw.githubusercontent.com/Edoudotnet/Sub/main/V2mix
 ```
 ![rand](https://rand-xyz.now.sh/api/hello)
 
 ```
-https://raw.githubusercontent.com/darknessm427/Sub/main/Ss
+https://raw.githubusercontent.com/Edoudotnet/Sub/main/Ss
 ```
 ![rand](https://rand-xyz.now.sh/api/hello)
