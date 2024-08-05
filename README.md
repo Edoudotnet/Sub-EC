@@ -1,4 +1,4 @@
- # <p align="center">$\color{gold} \Large \text{ÐΛɌ₭ᑎΞ𐒡𐒡}$</p>
+ # <p align="center">$\color{gold} \Large \text{𝔼𝕞𝕒𝕕𝔾𝕣𝕒𝕡𝕙𝕚𝕔}$</p>
 
 ![rand](https://rand-xyz.now.sh/api/hello)
 
