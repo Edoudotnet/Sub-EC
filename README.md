@@ -16,3 +16,8 @@ https://raw.githubusercontent.com/Edoudotnet/Sub/main/V2mix
 https://raw.githubusercontent.com/Edoudotnet/Sub/main/Ss
 ```
 ![rand](https://rand-xyz.now.sh/api/hello)
+
+```
+https://raw.githubusercontent.com/Edoudotnet/Sub/main/Ss
+```
+![rand](https://rand-xyz.now.sh/api/hello)
