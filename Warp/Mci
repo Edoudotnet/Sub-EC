@@ -1,0 +1,7 @@
+//profile-title: base64:8J2UvPCdlZ7wnZWS8J2VlfCdlL7wnZWj8J2VkvCdlaHwnZWZ8J2VmvCdlZQt4bSh4bSAyoDhtJjwn6SW
+//profile-update-interval: 24
+//subscription-userinfo: upload=5368709120; download=545097156608; total=955630223360; expire=1762677732
+//support-url: https://t.me/EmadGraphic
+
+warp://@auto6/?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#Local&&detour=warp://@auto4/?ifp=40-80&ifps=40-100&ifpd=4-8&ifpm=m4#FastX-MCI
+warp://@auto6/?ifp=1-3&ifpm=m4#Local&&detour=warp://@auto4/?ifp=1-3&ifpm=m6#MCI
