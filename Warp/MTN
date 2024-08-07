@@ -3,6 +3,6 @@
 //subscription-userinfo: upload=5368709120; download=545097156608; total=955630223360; expire=1762677732
 //support-url: https://t.me/EmadGraphic
 
-warp://@auto6/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#Local&&detour=warp://@auto4/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3FastX-MTN
-warp://@auto4/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#Local&&detour=warp://@auto4/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3FastX-MTN(double ipv4)
-warp://@auto6/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#Local&&detour=warp://@auto6/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3FastX-MTN(double ipv6)
+warp://@auto6/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#Local&&detour=warp://@auto4/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#FastX-MTN
+warp://@auto4/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#Local&&detour=warp://@auto4/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#FastX-MTN(double ipv4)
+warp://@auto6/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#Local&&detour=warp://@auto6/?ifp=20-35&ifps=5-35&ifpd=5-35&ifpm=m3#FastX-MTN(double ipv6)
