@@ -80,7 +80,7 @@
     {
       "type": "hysteria2",
       "tag": "H2Emad",
-      "server": "hk.zhenshihui.one",
+      "server": "48.218.116.56",
       "server_port": 48489,
       "obfs": {
         "type": "salamander",
