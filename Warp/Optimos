@@ -1,9 +1,3 @@
-//profile-title: base64:d2FycCBPTiB3YXJw
-//profile-update-interval: 24
-//subscription-userinfo: upload=2147483648; download=3221225472; total=966367641600; expire=1731335400
-//support-url:  https://t.me/F_NiREvil
-//profile-web-page-url: https://github.com/NiREvil
-
 {
   "log": {
     "level": "warn",
@@ -14,7 +8,7 @@
     "servers": [
       {
         "tag": "dns-remote",
-        "address": "tcp://185.228.168.9",
+        "address": "https://94.140.14.14/dns-query",
         "address_resolver": "dns-direct"
       },
       {
@@ -24,7 +18,7 @@
       },
       {
         "tag": "dns-direct",
-        "address": "tcp://185.228.168.9",
+        "address": "https://94.140.14.14/dns-query",
         "address_resolver": "dns-local",
         "detour": "direct"
       },
@@ -39,6 +33,14 @@
       }
     ],
     "rules": [
+      {
+        "domain": [
+          "wikimedia-dns.org",
+          "ipw.nscl.ir",
+          "ipw.bachebiapain.ir"
+        ],
+        "server": "dns-direct"
+      },
       {
         "domain": "cp.cloudflare.com",
         "server": "dns-remote",
@@ -61,8 +63,8 @@
         "2a06:98c1:3121::",
         "104.17.147.22",
         "104.17.148.22",
-        "188.114.97.8",
-        "188.114.96.8",
+        "188.114.97.0",
+        "188.114.96.0",
         "2a06:98c1:3121::",
         "2a06:98c1:3120::"
       ]
@@ -77,7 +79,6 @@
       "inet4_address": "172.19.0.1/28",
       "inet6_address": "fdfe:dcba:9876::1/126",
       "auto_route": true,
-      "strict_route": true,
       "endpoint_independent_nat": true,
       "stack": "mixed",
       "sniff": true,
@@ -86,7 +87,7 @@
     {
       "type": "mixed",
       "tag": "mixed-in",
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "listen_port": 2334,
       "sniff": true,
       "sniff_override_destination": true
@@ -94,7 +95,7 @@
     {
       "type": "direct",
       "tag": "dns-in",
-      "listen": "127.0.0.1",
+      "listen": "0.0.0.0",
       "listen_port": 6450
     }
   ],
@@ -104,8 +105,10 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "TEHRAN",
-        "BERLIN"
+        "Warp 1",
+        "Warp 2",
+        "Warp 3",
+        "Warp 4"
       ],
       "default": "auto"
     },
@@ -113,8 +116,10 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "warp🇮🇷 § 1",
-        "wOw🇩🇪 § 2"
+          "Warp 1",
+        "Warp 2",
+        "Warp 3",
+        "Warp 4"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -122,39 +127,81 @@
     },
     {
       "type": "wireguard",
-      "tag": "warp🇮🇷🇮🇷 § 1",
-      "local_address":       [
-        "172.16.0.2/24",
-        "2606:4700:110:8906:8d9e:c129:70ed:e0db/128"
+      "tag": "Warp 1",
+      "domain_strategy": "prefer_ipv4",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8aff:fe41:fbc6:4c1:9393/128"
       ],
-      "private_key": "cNmYhU7doUnzfVdm0R44hhQ2d0GavaI1xefkmiLkNEI=",
-      "server": "DxI3jGC_-XyCeFfgcQe8",
-      "server_port": 500,
+      "private_key": "aBmBYxS76xwqNih/AYFx6KsS+BitcjEd6lm96gD153Y%3D",
+      "server": "188.114.98.210",
+      "server_port": 7156,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo%3D",
+      "reserved": [6,226,218],
+      "mtu": 1280,
+      "fake_packets_mode": "m4",
+      "fake_packets": "40-80",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "4-8"
+    },
+    {
+      "type": "wireguard",
+      "tag": "Warp 2",
+      "domain_strategy": "prefer_ipv4",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8a2c:4b4b:d41b:2a64:e4f4/128"
+      ],
+       "private_key": "KMY5BZH/VSld8ARCM0IzeD4/DJdp+L8c78bid3+19GQ=",
+      "server": "LNQe_VtUgVw2Bny8nS58",
+      "server_port": 988,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "xjBA",
+      "reserved": "rRaL",
       "mtu": 1330,
-      "fake_packets": "1-3",
-      "fake_packets_size": "10-30",
-      "fake_packets_delay": "10-30",
+      "fake_packets": "40-80",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "4-8",
       "fake_packets_mode": "m4"
     },
     {
-      
       "type": "wireguard",
-      "tag": "wOw🇩🇪🇩🇪 § 2",
-      "detour": "warp🇮🇷🇮🇷 § 1",
-      "local_address":       [
-        "172.16.0.2/24",
-        "2606:4700:110:85be:6cb7:5450:5180:f86/128"
+      "tag": "Warp 3",
+      "domain_strategy": "prefer_ipv4",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8cca:c935:d1f9:e1eb:e785/128"
       ],
-      "private_key": "+EwtHoRMBkNvzhYEfadT0yfTAWLKmx7xxVHVGxVYz3o=",
+       "private_key": "+EwtHoRMBkNvzhYEfadT0yfTAWLKmx7xxVHVGxVYz3o=",
       "server": "162.159.192.1",
-      "server_port": 500,
+      "server_port": 988,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
       "reserved": "Cdrl",
       "mtu": 1280
-    
-    },    {
+      "fake_packets": "40-80",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "4-8",
+      "fake_packets_mode": "m4"
+    },
+    {
+      "type": "wireguard",
+      "tag": "Warp 4",
+      "domain_strategy": "prefer_ipv4",
+      "local_address": [
+        "172.16.0.2/32",
+        "2606:4700:110:8654:6b66:3333:c4e2:dcc1/128"
+      ],
+       "private_key": "mHn0sb46cLgxLOBt4aQuJQXhVuQnxRBZRRA46toA9Ek=",
+      "server": "162.159.192.1",
+      "server_port": 2408,
+      "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
+      "reserved": "cAoO",
+      "mtu": 1280,
+      "fake_packets": "40-80",
+      "fake_packets_size": "40-100",
+      "fake_packets_delay": "4-8",
+      "fake_packets_mode": "m4"
+    },
+    {
       "type": "dns",
       "tag": "dns-out"
     },
@@ -167,8 +214,8 @@
       "tag": "direct-fragment",
       "tls_fragment": {
         "enabled": true,
-        "size": "100-200",
-        "sleep": "10-15"
+        "size": "20-40",
+        "sleep": "2-4"
       }
     },
     {
@@ -215,6 +262,10 @@
       {
         "clash_mode": "Global",
         "outbound": "select"
+      },
+      {
+        "geoip": "private",
+        "outbound": "bypass"
       }
     ],
     "rule_set": [
@@ -286,7 +337,7 @@
     },
     "clash_api": {
       "external_controller": "127.0.0.1:6756",
-      "secret": "aXuYCfa3sxRbigex"
+      "secret": "xdQr0yp6812ahHY8"
     }
   }
 }
