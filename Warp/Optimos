@@ -113,8 +113,8 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "warp🇮🇷 § 0",
-        "wOw🇩🇪 § 1"
+        "warp🇮🇷 § 1",
+        "wOw🇩🇪 § 2"
       ],
       "url": "http://connectivitycheck.gstatic.com/generate_204",
       "interval": "10m0s",
@@ -122,16 +122,16 @@
     },
     {
       "type": "wireguard",
-      "tag": "warp🇮🇷 § 0",
+      "tag": "warp🇮🇷🇮🇷 § 1",
       "local_address":       [
         "172.16.0.2/24",
-        "2606:4700:110:82c1:f9d9:f8a6:3263:74ad/128"
+        "2606:4700:110:8906:8d9e:c129:70ed:e0db/128"
       ],
-      "private_key": "KMY5BZH/VSld8ARCM0IzeD4/DJdp+L8c78bid3+19GQ=",
-      "server": "_envT2QSGM1L0XyCW85K",
-      "server_port": 987,
+      "private_key": "cNmYhU7doUnzfVdm0R44hhQ2d0GavaI1xefkmiLkNEI=",
+      "server": "DxI3jGC_-XyCeFfgcQe8",
+      "server_port": 500,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "rRaL",
+      "reserved": "xjBA",
       "mtu": 1330,
       "fake_packets": "1-3",
       "fake_packets_size": "10-30",
@@ -139,19 +139,21 @@
       "fake_packets_mode": "m4"
     },
     {
+      
       "type": "wireguard",
-      "tag": "wOw🇩🇪 § 1",
-      "detour": "warp🇮🇷 § 0",
+      "tag": "wOw🇩🇪🇩🇪 § 2",
+      "detour": "warp🇮🇷🇮🇷 § 1",
       "local_address":       [
         "172.16.0.2/24",
-        "2606:4700:110:8d3d:3233:123:6e36:61ce/128"
+        "2606:4700:110:85be:6cb7:5450:5180:f86/128"
       ],
-      "private_key": "2B0uvppGMdgYAqaNjqk6k2nFBACovKtZnX0Z7NTxgGI=",
+      "private_key": "+EwtHoRMBkNvzhYEfadT0yfTAWLKmx7xxVHVGxVYz3o=",
       "server": "162.159.192.1",
-      "server_port": 859,
+      "server_port": 500,
       "peer_public_key": "bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=",
-      "reserved": "grLr",
+      "reserved": "Cdrl",
       "mtu": 1280
+    
     },    {
       "type": "dns",
       "tag": "dns-out"
