@@ -79,14 +79,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇳🇱H2",
-      "server": "212.113.100.126",
-      "server_port": 443,
+      "tag": "H2Emad",
+      "server": "hk.zhenshihui.one",
+      "server_port": 48489,
       "obfs": {
         "type": "salamander",
-        "password": "0c9e44a9a1647525"
+        "password": "5582184c-5491-4124-8198-2a9f7df5ba0f"
       },
-      "password": "517b1fa2800fd55b",
+      "password": "5582184c-5491-4124-8198-2a9f7df5ba0f",
       "tls": {
         "enabled": true,
         "server_name": "www.google.com",
